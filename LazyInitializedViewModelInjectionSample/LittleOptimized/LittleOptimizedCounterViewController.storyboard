@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Little Optimized Counter View Controller-->
+        <scene sceneID="vEK-5b-LlZ">
+            <objects>
+                <viewController storyboardIdentifier="LittleOptimizedCounterViewController" id="K4l-Wk-MVw" customClass="LittleOptimizedCounterViewController" customModule="LazyInitializedViewModelInjectionSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Oa1-oe-T9k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="w64-BO-PTg">
+                                <rect key="frame" x="184" y="408" width="46" height="80.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDp-IG-zUJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lj-w2-T5e">
+                                        <rect key="frame" x="0.0" y="30" width="46" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1j-0R-J8H">
+                                        <rect key="frame" x="0.0" y="50.5" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w64-BO-PTg" firstAttribute="centerY" secondItem="Oa1-oe-T9k" secondAttribute="centerY" id="UtA-fz-jdu"/>
+                            <constraint firstItem="w64-BO-PTg" firstAttribute="centerX" secondItem="Oa1-oe-T9k" secondAttribute="centerX" id="V8Q-w2-HEr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hx2-iB-6GR"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerStackView" destination="w64-BO-PTg" id="q9e-hD-xYA"/>
+                        <outlet property="countLabel" destination="5lj-w2-T5e" id="gT8-7u-J4E"/>
+                        <outlet property="decrementButton" destination="G1j-0R-J8H" id="05n-v0-D9x"/>
+                        <outlet property="incrementButton" destination="RDp-IG-zUJ" id="Iah-RI-oVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAl-Dd-3qD" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+    </scenes>
+</document>
