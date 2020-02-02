@@ -11,9 +11,6 @@ import Combine
 public protocol CounterViewModelType {
     var countText: AnyPublisher<String?, Never> { get }
     var isDecrementEnabled: AnyPublisher<Bool, Never> { get }
-    init(count: Int,
-         increment: AnyPublisher<Void, Never>,
-         decrement: AnyPublisher<Void, Never>)
 }
 
 public final class CounterViewModel: CounterViewModelType {
